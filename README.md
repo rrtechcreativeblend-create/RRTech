@@ -60,7 +60,6 @@
     }
     .logo-container:hover { transform: scale(1.02); }
     
-    /* RR - CRYSTAL CLEAR, NO BLUR, SOLID GRADIENT TEXT */
     .logo-line1 {
       font-size: 72px;
       font-weight: 900;
@@ -72,7 +71,6 @@
       line-height: 1;
       position: relative;
     }
-    /* First R: Sharp Orange + Blue split - NO BLUR, CLEAR TEXT */
     .logo-r-first {
       font-size: 82px;
       font-weight: 900;
@@ -82,9 +80,7 @@
       color: transparent;
       letter-spacing: -2px;
       display: inline-block;
-      text-shadow: none;
     }
-    /* Second R: Sharp Blue + Orange split - CRYSTAL CLEAR */
     .logo-r-second {
       font-size: 82px;
       font-weight: 900;
@@ -95,9 +91,7 @@
       letter-spacing: -2px;
       margin-left: -12px;
       display: inline-block;
-      text-shadow: none;
     }
-    /* Underline glow - optional, doesn't affect RR clarity */
     .logo-line1::after {
       content: '';
       position: absolute;
@@ -112,7 +106,6 @@
       pointer-events: none;
     }
     
-    /* Line 2: TechCreative */
     .logo-line2 {
       font-size: 32px;
       font-weight: 700;
@@ -125,7 +118,6 @@
       text-align: center;
     }
     
-    /* Line 3: Blend */
     .logo-line3 {
       display: flex;
       justify-content: center;
@@ -162,7 +154,6 @@
       padding: 0 8px;
     }
     
-    /* Line 4: Solutions */
     .logo-line4 {
       font-size: 34px;
       font-weight: 800;
@@ -176,14 +167,13 @@
       display: inline-block;
     }
     
-    /* Responsive adjustments */
     @media (max-width: 950px) {
       .logo-line1 { font-size: 52px; }
       .logo-r-first, .logo-r-second { font-size: 60px; }
       .logo-r-second { margin-left: -8px; }
       .logo-line2 { font-size: 26px; }
       .logo-blend-text { font-size: 28px; }
-      .logo-line4 { font-size: 26px; letter-spacing: 3px; }
+      .logo-line4 { font-size: 26px; }
       .logo-line-left, .logo-line-right { width: 45px; }
     }
     @media (max-width: 700px) {
@@ -192,12 +182,11 @@
       .logo-r-second { margin-left: -6px; }
       .logo-line2 { font-size: 20px; }
       .logo-blend-text { font-size: 22px; }
-      .logo-line4 { font-size: 20px; letter-spacing: 2px; }
+      .logo-line4 { font-size: 20px; }
       .logo-line-left, .logo-line-right { width: 30px; }
       .logo-line3 { gap: 12px; }
     }
     
-    /* navbar */
     .navbar { display: flex; gap: 8px; }
     .navbar a {
       padding: 10px 22px;
@@ -574,6 +563,76 @@
       margin: 25px 0;
     }
     
+    /* MODAL STYLES - for Learn More popup */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 2000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.9);
+      backdrop-filter: blur(8px);
+      justify-content: center;
+      align-items: center;
+    }
+    .modal-content {
+      background: linear-gradient(135deg, #1a1a2e, #16213e);
+      margin: 5% auto;
+      padding: 40px;
+      border-radius: 48px;
+      width: 90%;
+      max-width: 650px;
+      border: 2px solid #0ef;
+      box-shadow: 0 0 50px rgba(0,238,255,0.4);
+      position: relative;
+      animation: modalFadeIn 0.3s ease;
+    }
+    @keyframes modalFadeIn {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #0ef;
+      padding-bottom: 15px;
+      margin-bottom: 25px;
+    }
+    .modal-header h2 {
+      color: #0ef;
+      font-size: 32px;
+      font-weight: 800;
+      margin: 0;
+    }
+    .close-modal {
+      color: #0ef;
+      font-size: 42px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.2s;
+      line-height: 1;
+    }
+    .close-modal:hover {
+      color: #fff;
+      text-shadow: 0 0 10px #0ef;
+      transform: scale(1.1);
+    }
+    .modal-body {
+      color: #ddd;
+      font-size: 18px;
+      line-height: 1.8;
+    }
+    .modal-body p { margin-bottom: 18px; }
+    .modal-body ul { margin-left: 25px; margin-bottom: 20px; }
+    .modal-body li { margin-bottom: 8px; }
+    .modal-highlight {
+      color: #0ef;
+      font-weight: 600;
+    }
+    
     .footer {
       background: #050505;
       padding: 30px;
@@ -607,22 +666,17 @@
       }
       .navbar.active { left: 0; }
       .navbar a { text-align: center; margin: 5px 20px; }
+      .modal-content { padding: 25px; margin: 20% auto; }
+      .modal-header h2 { font-size: 24px; }
     }
   </style>
 </head>
 <body>
   <header class="header">
     <a href="#" class="logo-container" id="homeLogoLink">
-      <div class="logo-line1">
-        <span class="logo-r-first">R</span>
-        <span class="logo-r-second">R</span>
-      </div>
+      <div class="logo-line1"><span class="logo-r-first">R</span><span class="logo-r-second">R</span></div>
       <div class="logo-line2">TechCreative</div>
-      <div class="logo-line3">
-        <span class="logo-line-left"></span>
-        <span class="logo-blend-text">Blend</span>
-        <span class="logo-line-right"></span>
-      </div>
+      <div class="logo-line3"><span class="logo-line-left"></span><span class="logo-blend-text">Blend</span><span class="logo-line-right"></span></div>
       <div class="logo-line4">Solutions</div>
     </a>
     <nav class="navbar">
@@ -634,6 +688,19 @@
     </nav>
     <i class='bx bx-menu' id="menu-icon"></i>
   </header>
+
+  <!-- MODAL POPUP -->
+  <div id="serviceModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 id="modalTitle">Service Details</h2>
+        <span class="close-modal">&times;</span>
+      </div>
+      <div class="modal-body" id="modalBody">
+        <p>Detailed information about the service will appear here.</p>
+      </div>
+    </div>
+  </div>
 
   <!-- HOME PAGE -->
   <div id="homePage" class="page active-page">
@@ -658,16 +725,10 @@
     </section>
 
     <section class="services-section"><h2>✨ Our Premium Services</h2>
-      <div class="services-grid">
-        <div class="service-card"><img class="service-img" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"><h3>Digital Marketing</h3><p>SEO, social media, paid ads & content. Data‑driven campaigns that maximize ROI.</p><a class="card-btn">Learn more</a></div>
-        <div class="service-card"><img class="service-img" src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"><h3>UI/UX Design</h3><p>Intuitive, beautiful interfaces. User‑centered design for web & mobile.</p><a class="card-btn">Learn more</a></div>
-        <div class="service-card"><img class="service-img" src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"><h3>Data Analytics</h3><p>Turn data into decisions. Dashboards, trend analysis, predictive insights.</p><a class="card-btn">Learn more</a></div>
-        <div class="service-card"><img class="service-img" src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"><h3>Business Analyst</h3><p>Requirements, process mapping, gap analysis. Align IT and business.</p><a class="card-btn">Learn more</a></div>
-        <div class="service-card"><img class="service-img" src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"><h3>AI Auto Machines</h3><p>Intelligent automation, RPA, AI-driven machinery, custom models.</p><a class="card-btn">Learn more</a></div>
-        <div class="service-card"><img class="service-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"><h3>Power BI</h3><p>Interactive dashboards, real‑time reporting, data visualization.</p><a class="card-btn">Learn more</a></div>
+      <div class="services-grid" id="homeServicesGrid">
+        <!-- Service cards will be populated via JS or static, but we'll use static with modal triggers -->
       </div>
     </section>
-
     <section class="stats-section"><div class="stats-container"><div class="stats-header"><h1>📊 Company Performance Metrics</h1><p>Driving innovation with measurable impact and data-driven excellence</p></div>
       <div class="stats-grid-large">
         <div class="stat-card-large"><div class="stat-number">3+</div><div class="stat-label">Years of Excellence</div><div class="stat-desc">Industry leadership since 2022</div></div>
@@ -686,14 +747,7 @@
   </div>
 
   <!-- SERVICES PAGE -->
-  <div id="servicesPage" class="page"><section class="services-section" style="min-height:100vh;"><h2>✨ Our Premium Services</h2><div class="services-grid">
-    <div class="service-card"><img class="service-img" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"><h3>Digital Marketing</h3><p>SEO, social media, paid ads & content. Data‑driven campaigns that maximize ROI.</p><a class="card-btn">Learn more</a></div>
-    <div class="service-card"><img class="service-img" src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"><h3>UI/UX Design</h3><p>Intuitive, beautiful interfaces. User‑centered design for web & mobile.</p><a class="card-btn">Learn more</a></div>
-    <div class="service-card"><img class="service-img" src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"><h3>Data Analytics</h3><p>Turn data into decisions. Dashboards, trend analysis, predictive insights.</p><a class="card-btn">Learn more</a></div>
-    <div class="service-card"><img class="service-img" src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"><h3>Business Analyst</h3><p>Requirements, process mapping, gap analysis. Align IT and business.</p><a class="card-btn">Learn more</a></div>
-    <div class="service-card"><img class="service-img" src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"><h3>AI Auto Machines</h3><p>Intelligent automation, RPA, AI-driven machinery, custom models.</p><a class="card-btn">Learn more</a></div>
-    <div class="service-card"><img class="service-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"><h3>Power BI</h3><p>Interactive dashboards, real‑time reporting, data visualization.</p><a class="card-btn">Learn more</a></div>
-  </div></section></div>
+  <div id="servicesPage" class="page"><section class="services-section" style="min-height:100vh;"><h2>✨ Our Premium Services</h2><div class="services-grid" id="servicesGrid"></div></section></div>
 
   <!-- STATS PAGE -->
   <div id="statsPage" class="page"><section class="stats-section" style="min-height:100vh;"><div class="stats-container"><div class="stats-header"><h1>📊 Company Performance Metrics</h1><p>Driving innovation with measurable impact and data-driven excellence</p></div>
@@ -720,6 +774,100 @@
 
   <script>
     (function() {
+      // Service data for detailed explanations
+      const serviceDetails = {
+        "Digital Marketing": {
+          title: "🚀 Digital Marketing Excellence",
+          content: "<p>Our <span class='modal-highlight'>Digital Marketing</span> service delivers data-driven strategies that maximize ROI. We specialize in:</p><ul><li><strong>SEO Optimization:</strong> First-page rankings, keyword research, technical SEO</li><li><strong>Social Media Management:</strong> Engaging content, paid campaigns, community growth</li><li><strong>PPC Advertising:</strong> Google Ads, Meta Ads, retargeting strategies</li><li><strong>Content Marketing:</strong> Blog posts, videos, infographics that convert</li><li><strong>Email Marketing:</strong> Automated sequences, segmentation, analytics</li></ul><p>Our team uses advanced analytics to track every campaign, ensuring continuous improvement and measurable results for your brand.</p>"
+        },
+        "UI/UX Design": {
+          title: "🎨 UI/UX Design",
+          content: "<p>Our <span class='modal-highlight'>UI/UX Design</span> service creates intuitive, beautiful digital experiences that users love. We focus on:</p><ul><li><strong>User Research:</strong> Persona development, journey mapping, usability testing</li><li><strong>Wireframing & Prototyping:</strong> Interactive mockups, rapid iteration</li><li><strong>Visual Design:</strong> Modern interfaces, design systems, micro-interactions</li><li><strong>Accessibility:</strong> WCAG compliance, inclusive design principles</li><li><strong>Conversion Optimization:</strong> A/B testing, heatmaps, user flow analysis</li></ul><p>We transform complex requirements into seamless, engaging interfaces that drive user satisfaction and business growth.</p>"
+        },
+        "Data Analytics": {
+          title: "📊 Data Analytics",
+          content: "<p>Our <span class='modal-highlight'>Data Analytics</span> service turns raw data into actionable business intelligence. We provide:</p><ul><li><strong>Descriptive Analytics:</strong> Historical data visualization, KPI dashboards</li><li><strong>Diagnostic Analytics:</strong> Root cause analysis, trend identification</li><li><strong>Predictive Modeling:</strong> Forecasting, regression analysis, ML predictions</li><li><strong>Prescriptive Analytics:</strong> Optimization recommendations, scenario planning</li><li><strong>Data Warehousing:</strong> ETL pipelines, data governance, quality assurance</li></ul><p>Make informed decisions with real-time insights and custom dashboards tailored to your business needs.</p>"
+        },
+        "Business Analyst": {
+          title: "💼 Business Analyst Services",
+          content: "<p>Our <span class='modal-highlight'>Business Analyst</span> service bridges the gap between IT and business goals. We deliver:</p><ul><li><strong>Requirement Elicitation:</strong> Stakeholder interviews, workshops, surveys</li><li><strong>Process Mapping:</strong> As-is/to-be analysis, gap identification, workflow optimization</li><li><strong>Solution Assessment:</strong> Feasibility studies, cost-benefit analysis, vendor selection</li><li><strong>Agile Collaboration:</strong> User stories, acceptance criteria, sprint planning</li><li><strong>Change Management:</strong> Training documentation, rollout strategies, user adoption</li></ul><p>We ensure your technology investments align perfectly with strategic objectives and deliver measurable value.</p>"
+        },
+        "AI Auto Machines": {
+          title: "🤖 AI Auto Machines",
+          content: "<p>Our <span class='modal-highlight'>AI Auto Machines</span> service revolutionizes industrial automation with intelligent systems. We offer:</p><ul><li><strong>Robotic Process Automation (RPA):</strong> Software bots for repetitive tasks, data entry, workflows</li><li><strong>Machine Vision Systems:</strong> Quality inspection, object detection, defect analysis</li><li><strong>Predictive Maintenance:</strong> Sensor data analysis, failure prediction, downtime reduction</li><li><strong>Autonomous Guided Vehicles (AGVs):</strong> Warehouse automation, logistics optimization</li><li><strong>Custom AI Models:</strong> Computer vision, NLP, anomaly detection for machinery</li></ul><p>Increase efficiency, reduce costs, and unlock new capabilities with intelligent automation solutions.</p>"
+        },
+        "Power BI": {
+          title: "📈 Power BI Solutions",
+          content: "<p>Our <span class='modal-highlight'>Power BI</span> service creates stunning, interactive dashboards that empower data-driven decisions. We provide:</p><ul><li><strong>Dashboard Development:</strong> Real-time KPIs, custom visuals, drill-down reports</li><li><strong>Data Modeling:</strong> DAX calculations, relationship management, data transformation</li><li><strong>Integration Services:</strong> Connect to SQL, Azure, Salesforce, Excel, APIs, and more</li><li><strong>Row-Level Security:</strong> User-based access control, dynamic data masking</li><li><strong>Training & Support:</strong> Power BI adoption, report building workshops, governance</li></ul><p>Transform complex data into clear, actionable insights that drive business performance across your organization.</p>"
+        }
+      };
+
+      function createServiceCard(serviceName, imgSrc) {
+        const card = document.createElement('div');
+        card.className = 'service-card';
+        card.innerHTML = `
+          <img class="service-img" src="${imgSrc}" alt="${serviceName}">
+          <h3>${serviceName}</h3>
+          <p>${serviceName === "Digital Marketing" ? "SEO, social media, paid ads & content. Data‑driven campaigns that maximize ROI." : 
+             serviceName === "UI/UX Design" ? "Intuitive, beautiful interfaces. User‑centered design for web & mobile." :
+             serviceName === "Data Analytics" ? "Turn data into decisions. Dashboards, trend analysis, predictive insights." :
+             serviceName === "Business Analyst" ? "Requirements, process mapping, gap analysis. Align IT and business." :
+             serviceName === "AI Auto Machines" ? "Intelligent automation, RPA, AI-driven machinery, custom models." :
+             "Interactive dashboards, real‑time reporting, data visualization."}</p>
+          <button class="card-btn" data-service="${serviceName}">Learn more</button>
+        `;
+        return card;
+      }
+
+      const servicesList = [
+        { name: "Digital Marketing", img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
+        { name: "UI/UX Design", img: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
+        { name: "Data Analytics", img: "https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
+        { name: "Business Analyst", img: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
+        { name: "AI Auto Machines", img: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
+        { name: "Power BI", img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" }
+      ];
+
+      const homeGrid = document.getElementById('homeServicesGrid');
+      const servicesGrid = document.getElementById('servicesGrid');
+      
+      if (homeGrid) {
+        servicesList.forEach(s => { homeGrid.appendChild(createServiceCard(s.name, s.img)); });
+      }
+      if (servicesGrid) {
+        servicesList.forEach(s => { servicesGrid.appendChild(createServiceCard(s.name, s.img)); });
+      }
+
+      // Modal functionality
+      const modal = document.getElementById('serviceModal');
+      const modalTitle = document.getElementById('modalTitle');
+      const modalBody = document.getElementById('modalBody');
+      const closeModal = document.querySelector('.close-modal');
+      
+      function showServiceDetails(serviceName) {
+        const details = serviceDetails[serviceName];
+        if (details) {
+          modalTitle.textContent = details.title;
+          modalBody.innerHTML = details.content;
+          modal.style.display = 'flex';
+        } else {
+          modalTitle.textContent = serviceName;
+          modalBody.innerHTML = `<p>Detailed information about ${serviceName} is available upon request. Please contact our team for a personalized consultation.</p>`;
+          modal.style.display = 'flex';
+        }
+      }
+      
+      document.addEventListener('click', (e) => {
+        if (e.target.classList && e.target.classList.contains('card-btn')) {
+          const serviceName = e.target.getAttribute('data-service');
+          if (serviceName) showServiceDetails(serviceName);
+        }
+      });
+      
+      closeModal.addEventListener('click', () => { modal.style.display = 'none'; });
+      window.addEventListener('click', (e) => { if (e.target === modal) modal.style.display = 'none'; });
+
+      // Navigation and other functionality
       const header = document.querySelector('.header');
       const menuIcon = document.getElementById('menu-icon');
       const navbar = document.querySelector('.navbar');
@@ -760,10 +908,6 @@
       
       const logoHome = document.getElementById('homeLogoLink');
       if(logoHome) logoHome.addEventListener('click', (e) => { e.preventDefault(); activatePage('home'); });
-      
-      document.querySelectorAll('.card-btn').forEach(btn => {
-        btn.addEventListener('click', () => alert("✨ This service is available. Contact us for detailed consultation!"));
-      });
       
       const homeForm = document.getElementById('contactFormHome');
       if(homeForm) homeForm.addEventListener('submit', (e) => { e.preventDefault(); alert("✨ Thank you for reaching out! Our team will get back to you within 24 hours."); homeForm.reset(); });
