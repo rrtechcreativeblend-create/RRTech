@@ -627,7 +627,7 @@
   <!-- SERVICES PAGE -->
   <div id="servicesPage" class="page"><section class="services-section" style="min-height:100vh;"><h2>✨ Our Premium Services</h2><div class="services-grid" id="servicesGrid"></div></section></div>
 
-  <!-- STATS PAGE (UPDATED: Projects 10, Client Satisfaction 10/10) -->
+  <!-- STATS PAGE (UPDATED: 1+ Year of Excellence, Projects 10, Client Satisfaction 10/10, Industry leadership since 2025) -->
   <div id="statsPage" class="page"><section class="stats-section"><div class="stats-container"><div class="stats-header"><h1>📊 Company Performance Metrics</h1><p>Driving innovation with data-driven excellence</p></div><div class="stats-grid-large" id="fullStatsGrid"></div></div></section></div>
 
   <!-- CONTACT PAGE (standalone, auto-wrap) -->
@@ -638,7 +638,7 @@
     <h2 style="color:#0ef; text-align:center; margin:55px 0 20px;">📍 Our Location</h2><iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.630000000000!2d78.508500000000!3d17.475500000000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9bc5a4d04b23%3A0x4e1eac1a5e6c7bb9!2sAlwal%20Hills%20Road%20No%207%2C%20Secunderabad%2C%20Hyderabad!5e0!3m2!1sen!2sin!4v1693567890123" allowfullscreen loading="lazy"></iframe>
   </section></div>
 
-  <!-- ABOUT PAGE (Updated: Established 2025) -->
+  <!-- ABOUT PAGE (Established 2025) -->
   <div id="aboutPage" class="page"><section class="about-section"><div class="about-container"><h2>📌 About RR TechCreative Blend</h2><div style="text-align:center;"><span class="established-badge">✨ Established 2025 ✨</span></div><div class="about-content"><p><strong><span style="color:#FF8C00;">RR</span> <span style="color:#0066FF;">TechCreative</span> <span style="color:#FF8C00;">Blend</span> <span style="color:#0066FF;">Solutions</span></strong> was founded in 2025 with a clear vision: to bridge cutting-edge technology and practical business applications. Headquartered in Hyderabad, we deliver AI-driven automation, data-powered decisions, and creative digital solutions.</p><h3>🚀 Our Mission & Vision</h3><p><strong>Mission:</strong> Empower businesses with intelligent automation, actionable insights, and seamless digital experiences.<br><strong>Vision:</strong> Most trusted partner for end-to-end digital innovation.</p><h3>🏆 What Defines Us</h3><div class="about-grid"><div class="about-card"><i class='bx bx-brain'></i><h4>AI & Automation First</h4><p>Intelligent document processing, RPA, ML pipelines.</p></div><div class="about-card"><i class='bx bx-data'></i><h4>Data Obsessed</h4><p>Power BI, advanced analytics, data strategy.</p></div><div class="about-card"><i class='bx bx-palette'></i><h4>Creative by Design</h4><p>UI/UX that delights and converts.</p></div><div class="about-card"><i class='bx bx-line-chart'></i><h4>Business First</h4><p>Real ROI, bridging stakeholders and tech.</p></div></div><p style="text-align:center;color:#0ef;">📩 Join us — let's build the future, intelligently.</p></div></div></section></div>
 
   <footer class="footer"><p>© 2025 <span style="color:#FF8C00;">RR</span> <span style="color:#0066FF;">TechCreative</span> <span style="color:#FF8C00;">Blend</span> <span style="color:#0066FF;">Solutions</span> — AI · Automation · Analytics</p></footer>
@@ -660,9 +660,9 @@
         "Power BI":{title:"📈 Power BI Solutions",content:"<p>Interactive dashboards, DAX modeling, data integration (100+ sources), row-level security, training. Turn data into decisions.</p>"}
       };
       
-      // STATS DATA UPDATED: Projects 10, Client Satisfaction 10 (displayed as 10/10 or 100% but specifically 10)
+      // STATS DATA UPDATED: 1+ Year of Excellence, Industry leadership since 2025, Projects 10, Client Satisfaction 10/10
       const statsData = [
-        {num:"3+",label:"Years of Excellence",desc:"Industry leadership since 2025"},
+        {num:"1+",label:"Year of Excellence",desc:"Industry leadership since 2025"},
         {num:"10",label:"Projects Delivered",desc:"Successful transformations"},
         {num:"10/10",label:"Client Satisfaction",desc:"Perfect satisfaction rating"},
         {num:"24/7",label:"Premium Support",desc:"Round-the-clock assistance"},
