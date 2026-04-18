@@ -605,14 +605,20 @@
         <div class="hero-line4">Solutions</div>
         <h3>Where <span class="highlight">AI · Automation · Machines</span> converge</h3>
         <p>We engineer digital excellence through Business Analysis, AI Automation, Power BI, and full‑stack creative services. Your growth partner.</p>
-        <div class="home-sci"><a href="#"><img src="https://img.icons8.com/fluent/48/000000/linkedin.png" alt="LinkedIn"></a><a href="#"><img src="https://img.icons8.com/fluent/48/000000/instagram-new.png" alt="Instagram"></a></div>
+        <div class="home-sci">
+          <a href="https://www.linkedin.com/in/rr-techcreativeblendsolutions-3b1157404/" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/fluent/48/000000/linkedin.png" alt="LinkedIn"></a>
+          <a href="https://www.instagram.com/rr_techcreative_blendsolutions?igsh=Ymc0ZGw4ZjlpdXJj" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/fluent/48/000000/instagram-new.png" alt="Instagram"></a>
+        </div>
         <a href="#" class="btn" id="exploreServicesBtnHome">Explore services</a>
       </div>
       <div class="home-img"><img src="https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="creative tech"></div>
     </section>
     <section class="services-section"><h2>✨ Our Premium Services</h2><div class="services-grid" id="homeServicesGrid"></div></section>
     <section class="stats-section"><div class="stats-container"><div class="stats-header"><h1>📊 Performance Metrics</h1><p>Driving innovation with measurable impact</p></div><div class="stats-grid-large" id="statsPreview"></div></div></section>
-    <section class="contact-section"><h2>📞 Get In Touch</h2><div class="contact-box"><div class="contact-info"><h3>Contact Info</h3><div class="contact-details"><p><i class='bx bx-map'></i> 📍 Alwal Hills, Hyderabad - 500010</p><p><i class='bx bx-envelope'></i> ✉️ <a href="mailto:rrtechcreativeblend@gmail.com">rrtechcreativeblend@gmail.com</a></p></div><div class="home-sci" style="justify-content: flex-start;"><a href="#"><img src="https://img.icons8.com/fluent/48/000000/linkedin.png" alt="LinkedIn"></a><a href="#"><img src="https://img.icons8.com/fluent/48/000000/instagram-new.png" alt="Instagram"></a></div></div><div class="contact-form"><h3>Send Message</h3><form id="contactFormHome"><input type="text" id="homeName" placeholder="Full Name" required><input type="email" id="homeEmail" placeholder="Email" required><input id="homeSubject" placeholder="Subject"><textarea id="homeMessage" rows="4" placeholder="Message..."></textarea><button type="submit">Send Message</button></form></div></div>
+    <section class="contact-section"><h2>📞 Get In Touch</h2><div class="contact-box"><div class="contact-info"><h3>Contact Info</h3><div class="contact-details"><p><i class='bx bx-map'></i> 📍 Alwal Hills, Hyderabad - 500010</p><p><i class='bx bx-envelope'></i> ✉️ <a href="mailto:rrtechcreativeblend@gmail.com">rrtechcreativeblend@gmail.com</a></p></div><div class="home-sci" style="justify-content: flex-start;">
+          <a href="https://www.linkedin.com/in/rr-techcreativeblendsolutions-3b1157404/" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/fluent/48/000000/linkedin.png" alt="LinkedIn"></a>
+          <a href="https://www.instagram.com/rr_techcreative_blendsolutions?igsh=Ymc0ZGw4ZjlpdXJj" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/fluent/48/000000/instagram-new.png" alt="Instagram"></a>
+        </div></div><div class="contact-form"><h3>Send Message</h3><form id="contactFormHome"><input type="text" id="homeName" placeholder="Full Name" required><input type="email" id="homeEmail" placeholder="Email" required><input id="homeSubject" placeholder="Subject"><textarea id="homeMessage" rows="4" placeholder="Message..."></textarea><button type="submit">Send Message</button></form></div></div>
       <h2 style="color:#0ef; text-align:center; margin:55px 0 20px;">📍 Our Location</h2>
       <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.630000000000!2d78.508500000000!3d17.475500000000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9bc5a4d04b23%3A0x4e1eac1a5e6c7bb9!2sAlwal%20Hills%20Road%20No%207%2C%20Secunderabad%2C%20Hyderabad!5e0!3m2!1sen!2sin!4v1693567890123" allowfullscreen loading="lazy"></iframe>
     </section>
@@ -625,7 +631,10 @@
   <div id="statsPage" class="page"><section class="stats-section"><div class="stats-container"><div class="stats-header"><h1>📊 Company Performance Metrics</h1><p>Driving innovation with data-driven excellence</p></div><div class="stats-grid-large" id="fullStatsGrid"></div></div></section></div>
 
   <!-- CONTACT PAGE (standalone, auto-wrap) -->
-  <div id="contactPage" class="page"><section class="contact-section"><h2>📞 Get In Touch</h2><div class="contact-box"><div class="contact-info"><h3>Contact Information</h3><div class="contact-details"><p><i class='bx bx-map'></i> 📍 Alwal Hills, Hyderabad - 500010</p><p><i class='bx bx-envelope'></i> ✉️ <a href="mailto:rrtechcreativeblend@gmail.com">rrtechcreativeblend@gmail.com</a></p></div><div class="home-sci" style="justify-content: flex-start;"><a href="#"><img src="https://img.icons8.com/fluent/48/000000/linkedin.png" alt="LinkedIn"></a><a href="https://www.linkedin.com/in/rr-techcreativeblendsolutions-3b1157404/ "><img src="https://img.icons8.com/fluent/48/000000/instagram-new.png" alt="Instagram"></a></div></div><div class="contact-form"><h3>Send Message</h3><form id="contactFormContact"><input type="text" id="contactName" placeholder="Full Name" required><input type="email" id="contactEmail" placeholder="Email" required><input id="contactSubject" placeholder="Subject"><textarea id="contactMessage" rows="4" placeholder="Message..."></textarea><button type="submit">Send Message</button></form></div></div>
+  <div id="contactPage" class="page"><section class="contact-section"><h2>📞 Get In Touch</h2><div class="contact-box"><div class="contact-info"><h3>Contact Information</h3><div class="contact-details"><p><i class='bx bx-map'></i> 📍 Alwal Hills, Hyderabad - 500010</p><p><i class='bx bx-envelope'></i> ✉️ <a href="mailto:rrtechcreativeblend@gmail.com">rrtechcreativeblend@gmail.com</a></p></div><div class="home-sci" style="justify-content: flex-start;">
+          <a href="https://www.linkedin.com/in/rr-techcreativeblendsolutions-3b1157404/" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/fluent/48/000000/linkedin.png" alt="LinkedIn"></a>
+          <a href="https://www.instagram.com/rr_techcreative_blendsolutions?igsh=Ymc0ZGw4ZjlpdXJj" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/fluent/48/000000/instagram-new.png" alt="Instagram"></a>
+        </div></div><div class="contact-form"><h3>Send Message</h3><form id="contactFormContact"><input type="text" id="contactName" placeholder="Full Name" required><input type="email" id="contactEmail" placeholder="Email" required><input id="contactSubject" placeholder="Subject"><textarea id="contactMessage" rows="4" placeholder="Message..."></textarea><button type="submit">Send Message</button></form></div></div>
     <h2 style="color:#0ef; text-align:center; margin:55px 0 20px;">📍 Our Location</h2><iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.630000000000!2d78.508500000000!3d17.475500000000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9bc5a4d04b23%3A0x4e1eac1a5e6c7bb9!2sAlwal%20Hills%20Road%20No%207%2C%20Secunderabad%2C%20Hyderabad!5e0!3m2!1sen!2sin!4v1693567890123" allowfullscreen loading="lazy"></iframe>
   </section></div>
 
@@ -636,7 +645,12 @@
 
   <script>
     (function(){
-      emailjs.init("YOUR_PUBLIC_KEY"); // Replace with actual EmailJS public key for production
+      // EmailJS initialization placeholder (user can replace with actual key)
+      if(typeof emailjs !== 'undefined') {
+        emailjs.init("YOUR_PUBLIC_KEY"); 
+      }
+      
+      // Service details for modal
       const serviceDetails = {
         "Digital Marketing":{title:"🚀 Digital Marketing Excellence",content:"<p><span class='modal-highlight'>Digital Marketing</span>: SEO, social media, PPC, content & email marketing. Data-driven ROI maximization.</p><ul><li>SEO: first-page rankings, technical audits</li><li>Social Media: paid campaigns, community growth</li><li>PPC: Google/Meta Ads, retargeting</li><li>Email automation, drip campaigns</li></ul>"},
         "UI/UX Design":{title:"🎨 UI/UX Design",content:"<p>User research, wireframing, prototyping, visual design, accessibility, conversion optimization. Intuitive interfaces loved by users.</p>"},
@@ -645,6 +659,7 @@
         "AI Auto Machines":{title:"🤖 AI Auto Machines",content:"<p>RPA, machine vision, predictive maintenance, AGVs, custom AI models. Reduce downtime, boost efficiency.</p>"},
         "Power BI":{title:"📈 Power BI Solutions",content:"<p>Interactive dashboards, DAX modeling, data integration (100+ sources), row-level security, training. Turn data into decisions.</p>"}
       };
+      
       const statsData = [
         {num:"3+",label:"Years of Excellence",desc:"Industry leadership since 2022"},
         {num:"25+",label:"Projects Delivered",desc:"Successful transformations"},
@@ -653,6 +668,7 @@
         {num:"12+",label:"Expert Team",desc:"AI & Automation specialists"},
         {num:"25",label:"Happy Clients",desc:"Trusted by global brands"}
       ];
+      
       function buildStatsGrid(containerId){
         const container = document.getElementById(containerId);
         if(!container) return;
@@ -663,11 +679,13 @@
           container.appendChild(div);
         });
       }
+      
       function createServiceCard(serviceName, imgSrc){
         const card = document.createElement('div'); card.className = 'service-card';
         card.innerHTML = `<img class="service-img" src="${imgSrc}" alt="${serviceName}"><h3>${serviceName}</h3><p>${serviceName === "Digital Marketing" ? "Data-driven campaigns, SEO, social & PPC." : serviceName === "UI/UX Design" ? "Intuitive interfaces, user-centered design." : serviceName === "Data Analytics" ? "Turn data into decisions with dashboards." : serviceName === "Business Analyst" ? "Align IT & business, process optimization." : serviceName === "AI Auto Machines" ? "Intelligent automation & RPA solutions." : "Real-time dashboards, Power BI expertise."}</p><button class="card-btn" data-service="${serviceName}">Learn more</button>`;
         return card;
       }
+      
       const servicesList = [
         { name:"Digital Marketing", img:"https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
         { name:"UI/UX Design", img:"https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
@@ -676,6 +694,7 @@
         { name:"AI Auto Machines", img:"https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
         { name:"Power BI", img:"https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" }
       ];
+      
       const homeGrid = document.getElementById('homeServicesGrid');
       const servicesGrid = document.getElementById('servicesGrid');
       if(homeGrid) servicesList.forEach(s=>homeGrid.appendChild(createServiceCard(s.name,s.img)));
@@ -683,7 +702,7 @@
       buildStatsGrid('statsPreview');
       buildStatsGrid('fullStatsGrid');
       
-      // modal
+      // Modal logic
       const modal = document.getElementById('serviceModal');
       const modalTitle = document.getElementById('modalTitle');
       const modalBody = document.getElementById('modalBody');
@@ -699,12 +718,13 @@
       closeModal.onclick = ()=> modal.style.display='none';
       window.onclick = e=>{ if(e.target===modal) modal.style.display='none'; };
       
-      // Email simulation (actual integration placeholder)
+      // Email simulation (user can replace with actual EmailJS later)
       function sendEmailSim(formData){
-        console.log("Email send:",formData);
+        console.log("Email send simulation:",formData);
         alert("✨ Message sent! Our team will respond within 24 hours. (Demo mode)");
         return Promise.resolve();
       }
+      
       function setupForm(form, nameId,emailId,subjectId,msgId){
         if(!form) return;
         form.addEventListener('submit',(e)=>{
@@ -717,12 +737,13 @@
       setupForm(document.getElementById('contactFormHome'),'homeName','homeEmail','homeSubject','homeMessage');
       setupForm(document.getElementById('contactFormContact'),'contactName','contactEmail','contactSubject','contactMessage');
       
-      // navigation
+      // Navigation
       const header=document.querySelector('.header');
       const menuIcon=document.getElementById('menu-icon');
       const navbar=document.querySelector('.navbar');
       const navLinks=document.querySelectorAll('.nav-link');
       const pages={home:document.getElementById('homePage'),about:document.getElementById('aboutPage'),services:document.getElementById('servicesPage'),stats:document.getElementById('statsPage'),contact:document.getElementById('contactPage')};
+      
       function activatePage(pageId){
         Object.values(pages).forEach(p=>{if(p)p.classList.remove('active-page');});
         if(pages[pageId])pages[pageId].classList.add('active-page');
@@ -730,6 +751,7 @@
         window.scrollTo({top:0,behavior:'smooth'});
         if(navbar.classList.contains('active')){navbar.classList.remove('active');menuIcon.classList.remove('bx-x');}
       }
+      
       window.addEventListener('scroll',()=>header.classList.toggle('sticky',window.scrollY>20));
       menuIcon.addEventListener('click',()=>{navbar.classList.toggle('active');menuIcon.classList.toggle('bx-x');});
       navLinks.forEach(link=>{link.addEventListener('click',(e)=>{e.preventDefault();activatePage(link.getAttribute('data-page'));});});
